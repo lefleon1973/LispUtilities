@@ -1,0 +1,41 @@
+txtmhkot
+--------
+
+Σχεδιάζει μηκοτομή με ν polylines
+
+Δουλεύει σε acad/gstar και Εxcel/WPS Office το οποίο πρέπει να είναι ανοικτό.
+Για να τρέξει η μηκοτομή είναι απαραίτητο να τοποθετήσουμε 
+το ενεργό κελί στην πάνω αριστερά θέση
+που είναι η επικεφαλίδα των σημείων (εδώ ΟΝΟΜΑ ΣΗΜ)
++----------+----------+----------+...+----------+----------+
+| ΟΝΟΜΑ ΣΗΜ|  ΣΗΜ 1   |   ΣΗΜ2   |...|    ΣΗΜν  |    XΘ    |
++----------+----------+----------+...+----------+----------+
+
+Το όνομα σημείο εξάγεται στην πρώτη στήλη της μηκοτομής και η ΧΘ, οι αποστάσεις μεταξύ
+στην προτελευταία γραμμή της. Στην τελευταία γραμμή υπάρχει χιλιομέτρηση.
+Στις ενδιάμεσες στήλεν μεταξύ του ονόματος σημείου και ΧΘ υπάρχουν οι τεταγμένες των ν
+σημείων, όπου ν είναι και οι polylines. Στο lisp δίνουμε την κλίμακα μηκών και υψών για 
+τη σχεδίαση.
+Επίσης οι επικεφαλίδες πλήν της τελευταίας ΧΘ μπορούν να αλλάξουν και φαίνονται στο πινακάκι
+δείτε παράδειγμα η 1η στήλη όμως θα αναφέρεται στην ονομασία των σημείων και οι υπόλοιπες πλην
+της τελευταίας στις polylines των σημείων.
+
+
+Draws a vertical alignment with n polylines
+
+It is compatible with Autocad/GStar on output and Excel/WPS office. The spreadsheet must be opened.
+In order to create a vertical alignment we should place the active cell on the upper left position
+where are the headings
++----------+----------+----------+...+----------+----------+
+|    PEG   | POINT 1  |  POINT 1 |...| POINT Ν  |    CH    |
++----------+----------+----------+...+----------+----------+
+
+At the Autocad/GStar output the peg is extracted on first column, the distances between the pegs at the pre-last column.
+The chainage is at the last column. At the rest columns between the first and the pre-last column are the heights of 
+the n points where n the number of the polylines. At the input of lisp program we are inputing horizontal and the vertical
+scales.
+Note that the headings except chainage and distances between are changeable according to the inputs on the spreadsheet.
+
+
+
+

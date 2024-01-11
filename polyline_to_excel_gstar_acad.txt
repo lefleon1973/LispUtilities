@@ -1,0 +1,9 @@
+ptxl
+--------
+
+Εξάγει τις συντεταγμένες στο παγκόσμιο σύστημα  συντεγμένων WCS στο excel/wps. Απαιτεί το excel/WPS ανοικτό με λογιστικό φύλλο
+Οι συντεγμένες εξάγονται όπου είναι το ενεργό κελί του ενεργού λογιστικού φύλλου και γραμμή γραμμή
+
+Extracts the coordinates on the WCS on excel/WPS. The spreadsheet must be open with active sheet.
+The coordinates extract where is the active cell of the active sheet and row by row
+
