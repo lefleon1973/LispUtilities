@@ -1,3 +1,3 @@
 # LispUtilities
 
-2 lisp programs for AutoCAD/GStar
+2 lisp utility programs for AutoCAD/GStar
